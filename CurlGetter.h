@@ -5,14 +5,14 @@
 #include <string>
 #include <iostream>
 
-class CurlGetter
+class Curl
 {
-private:
-	CURL* m_CurlHandler;
-	CURLcode m_ResponceCode;
-
 public:
-	CurlGetter();
-	~CurlGetter();
-	std::string getJSONstring(const std::string& URL);
+	Curl(const char *URL);
+	~Curl();
+	std::string getJSONstring() const;
+private:
+	mutable CURL* m_CurlHandler;
+	mutable CURLcode m_ResponceCode;
+	const std::string URL;
 };

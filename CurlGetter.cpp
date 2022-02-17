@@ -7,17 +7,18 @@ WriteMemoryCallback(void* contents, size_t size, size_t nmemb, std::string &user
 	return size * nmemb;
 }
 
-CurlGetter::CurlGetter() 
+Curl::Curl(const char *URL)
+:URL(URL)
 {
 	curl_global_init(CURL_GLOBAL_ALL);
 }
 
-CurlGetter::~CurlGetter()
+Curl::~Curl()
 {
 	curl_global_cleanup();
 }
 
-std::string CurlGetter::getJSONstring(const std::string& URL)
+std::string Curl::getJSONstring() const
 {
 	std::string result;
 
