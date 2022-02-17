@@ -1,0 +1,4 @@
+C:\myStuff\ITMO\2-SEM\prog\VSlab2\lab2new\x64\Debug\lab2new.vcxproj.CopyComplete
+C:\myStuff\ITMO\2-SEM\prog\VSlab2\lab2new\x64\Debug\lab2new.exe
+C:\myStuff\ITMO\2-SEM\prog\VSlab2\lab2new\x64\Debug\libcurl-d.dll
+C:\myStuff\ITMO\2-SEM\prog\VSlab2\lab2new\x64\Debug\zlibd1.dll
